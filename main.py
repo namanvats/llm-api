@@ -24,7 +24,7 @@ def health() -> dict:
     return {"status": "ok"}
 
 
-@app.get("/v0/llmchat")
+@app.post("/v0/llmchat")
 async def llmchat(llm_chat_request: LLMChatRequest) -> dict:
     chat_model = llm_chat_request.llm_model
     chat_query = llm_chat_request.query
