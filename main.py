@@ -33,5 +33,5 @@ async def llmchat(llm_chat_request: LLMChatRequest) -> dict:
 
 # Run the FastAPI server using uvicorn
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 80))
     uvicorn.run(app, host="0.0.0.0", port=port)
