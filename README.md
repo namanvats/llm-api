@@ -1,4 +1,4 @@
-# LLM API Repository
+# LLM API Integrator
 
 ## Introduction
 
